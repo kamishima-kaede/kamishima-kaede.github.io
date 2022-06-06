@@ -1,39 +1,58 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./navbar";
-import sidebar from "./sidebar";
+import { hopeTheme } from 'vuepress-theme-hope';
+import navbar from './navbar';
+import sidebar from './sidebar';
 
 export default hopeTheme({
   // 界面
-  hostname: "https://hanekawa.top",
+  darkmode: 'switch',
+  themeColor: {
+    blue: '#2196f3',
+    red: '#f26d6d',
+    orange: '#fb9b5f'
+  },
+  iconAssets: 'iconfont',
+  fullscreen: true,
+  // backToTop: true,
+  pure: false,
 
+  // 当前网站部署到的域名
+  hostname: 'https://hanekawa.top',
   author: {
-    name: "Mr.Hope",
-    url: "https://hanekawa.top",
+    name: 'kamishima-kaede',
+    url: 'https://hanekawa.top'
   },
 
-  iconAssets: "iconfont",
-
-  logo: "/logo.svg",
-
-  repo: "kamishima-kaede/blog",
-
-  docsDir: "demo/src",
+  logo: '/logo.svg',
+  logoDark: '/logo.svg',
+  // 默认为 GitHub. 同时也可以是一个完整的 URL
+  repo: 'kamishima-kaede/blog',
+  // 自定义仓库链接文字。默认从 `repo` 中自动推断为
+  // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
+  repoLabel: 'GitHub',
+  // 是否在导航栏内显示仓库链接，默认为 `true`
+  repoDisplay: true,
 
   // navbar
   navbar: navbar,
-
   // sidebar
   sidebar: sidebar,
+  navbarLayout: {
+    left: ['Brand'],
+    center: ['Links'],
+    right: ['Repo', 'Outlook', 'Search']
+  },
 
-  footer: "",
+  docsDir: 'demo/src',
+
+  footer: '',
 
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
   blog: {
-    description: "一个前端开发者",
-    intro: "/intro.html",
+    description: '一个前端开发者',
+    intro: '/intro.html'
     // medias: {
     //   Baidu: "https://example.com",
     //   Bitbucket: "https://example.com",
@@ -69,15 +88,12 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
-    },
+      '/guide/encrypt.html': ['1234']
+    }
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true,
-    },
-
+    blog: true,
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
@@ -85,11 +101,11 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: 'Giscus',
+      repo: 'vuepress-theme-hope/giscus-discussions',
+      repoId: 'R_kgDOG_Pt2A',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOG_Pt2M4COD69'
 
       /**
        * Using Twikoo
@@ -107,8 +123,8 @@ export default hopeTheme({
     mdEnhance: {
       enableAll: true,
       presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-    },
-  },
+        plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
+      }
+    }
+  }
 });
