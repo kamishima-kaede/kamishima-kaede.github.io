@@ -22,8 +22,8 @@ export default hopeTheme({
     url: 'https://hanekawa.top'
   },
 
-  logo: '/logo.svg',
-  logoDark: '/logo.svg',
+  logo: '/assets/svg/logo.svg',
+  logoDark: '/assets/svg/logo.svg',
   // 默认为 GitHub. 同时也可以是一个完整的 URL
   repo: 'kamishima-kaede/blog',
   // 自定义仓库链接文字。默认从 `repo` 中自动推断为
@@ -51,39 +51,13 @@ export default hopeTheme({
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
   blog: {
-    description: '一个前端开发者',
-    intro: '/intro.html'
-    // medias: {
-    //   Baidu: "https://example.com",
-    //   Bitbucket: "https://example.com",
-    //   Dingding: "https://example.com",
-    //   Discord: "https://example.com",
-    //   Dribbble: "https://example.com",
-    //   Email: "https://example.com",
-    //   Evernote: "https://example.com",
-    //   Facebook: "https://example.com",
-    //   Flipboard: "https://example.com",
-    //   Gitee: "https://example.com",
-    //   GitHub: "https://example.com",
-    //   Gitlab: "https://example.com",
-    //   Gmail: "https://example.com",
-    //   Instagram: "https://example.com",
-    //   Lines: "https://example.com",
-    //   Linkedin: "https://example.com",
-    //   Pinterest: "https://example.com",
-    //   Pocket: "https://example.com",
-    //   QQ: "https://example.com",
-    //   Qzone: "https://example.com",
-    //   Reddit: "https://example.com",
-    //   Rss: "https://example.com",
-    //   Steam: "https://example.com",
-    //   Twitter: "https://example.com",
-    //   Wechat: "https://example.com",
-    //   Weibo: "https://example.com",
-    //   Whatsapp: "https://example.com",
-    //   Youtube: "https://example.com",
-    //   Zhihu: "https://example.com",
-    // },
+    sidebarDisplay: 'mobile',
+    articlePerPage: 10,
+    avatar: '/assets/svg/logo.svg',
+    // roundAvatar: true,
+    name: 'Kamishima-kaede',
+    description: '一位前端菜鸟'
+    // intro: '/intro.html'
   },
 
   encrypt: {
@@ -91,7 +65,6 @@ export default hopeTheme({
       '/guide/encrypt.html': ['1234']
     }
   },
-
   plugins: {
     blog: true,
     // 如果你不需要评论，可以直接删除 comment 配置，
@@ -124,6 +97,52 @@ export default hopeTheme({
       enableAll: true,
       presentation: {
         plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
+      }
+    },
+
+    pwa: {
+      update: 'disable',
+      favicon: "/favicon.ico",
+      themeColor: "#5c92d1",
+      cacheHTML: false,
+      maxSize: 3072,
+      apple: {
+        icon: "/assets/icons/apple-touch-icon.png",
+        statusBarColor: "white",
+      },
+      msTile: {
+        image: "/assets/icons/ms-icon-144.png",
+        color: "#ffffff",
+      },
+      manifest: {
+        name: 'Mr.Hope 的个人博客',
+        short_name: 'Mr.Hope Blog',
+        description: 'Mr.Hope 的个人博客',
+        theme_color: '#5c92d1',
+        icons: [
+          {
+            src: '/assets/icons/chrome-192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/assets/icons/chrome-512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
+          {
+            src: '/assets/icons/chrome-mask-192.png',
+            sizes: '192x192',
+            purpose: 'maskable',
+            type: 'image/png'
+          },
+          {
+            src: '/assets/icons/chrome-mask-512.png',
+            sizes: '512x512',
+            purpose: 'maskable',
+            type: 'image/png'
+          }
+        ]
       }
     }
   }
