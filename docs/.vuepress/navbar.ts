@@ -2,51 +2,75 @@ import { navbar } from 'vuepress-theme-hope';
 
 export default navbar([
   '/',
-  '/home',
-  { text: '使用指南', icon: 'creative', link: '/guide/' },
   {
-    text: '博文',
-    icon: 'edit',
-    prefix: '/posts/',
+    text: '学习笔记',
+    icon: 'framework',
+    prefix: '/framework_front/',
     children: [
       {
-        text: '文章 1-4',
-        icon: 'edit',
-        prefix: 'article/',
-        children: [
-          { text: '文章 1', icon: 'edit', link: 'article1' },
-          { text: '文章 2', icon: 'edit', link: 'article2' },
-          'article3',
-          'article4'
-        ]
-      },
-      {
-        text: '文章 5-12',
-        icon: 'edit',
-        children: [
-          {
-            text: '文章 5',
-            icon: 'edit',
-            link: 'article/article5'
-          },
-          {
-            text: '文章 6',
-            icon: 'edit',
-            link: 'article/article6'
-          },
-          'article/article7',
-          'article/article8'
-        ]
-      },
-      { text: '文章 9', icon: 'edit', link: 'article9' },
-      { text: '文章 10', icon: 'edit', link: 'article10' },
-      'article11',
-      'article12'
+        text: '前端框架',
+        children: ['vue3/', 'react/']
+      }
     ]
   },
-  {
-    text: '主题文档',
-    icon: 'note',
-    link: 'https://vuepress-theme-hope.github.io/v2/zh/'
-  }
+  // {
+  //   text: '其他整理',
+  //   children: [
+  //     { text: '镜像源地址收集', link: '/dev-tools/mirror_source' },
+  //     { text: '前端自动化部署', link: '/website-build/content' }
+  //   ],
+  // },
+  // {
+  //   text: '随笔',
+  //   icon: 'note',
+  //   prefix: '/note/',
+  //   children: [
+  //     { text: '随笔', link: '', icon: 'note', activeMatch: '^/note/$' },
+  //     {
+  //       text: '诗集: 四季',
+  //       children: ['spring/', 'summer/', 'fall/', 'winter/']
+  //     },
+  //     {
+  //       text: '其他作品',
+  //       children: ['life/', 'poem/']
+  //     },
+  //     'node-js/'
+  //   ]
+  // },
+  // {
+  //   text: '代码笔记',
+  //   icon: 'code',
+  //   children: [
+  //     {
+  //       text: '代码笔记',
+  //       icon: 'code',
+  //       link: '/code/',
+  //       activeMatch: '^/code/$'
+  //     },
+  //     {
+  //       text: '产品设计',
+  //       children: ['/design/']
+  //     },
+  //     {
+  //       text: '后端运维',
+  //       children: ['/linux/']
+  //     }
+  //   ]
+  // },
+  // {
+  //   text: '软件教程',
+  //   icon: 'software',
+  //   prefix: '/software/',
+  //   children: [
+  //     {
+  //       text: '软件教程',
+  //       icon: 'software',
+  //       link: '',
+  //       activeMatch: '^/software/$'
+  //     },
+  //     'vscode/',
+  //     'git/',
+  //     'comsol/'
+  //   ]
+  // }
 ]);

@@ -3,52 +3,64 @@ import navbar from './navbar';
 import sidebar from './sidebar';
 
 export default hopeTheme({
-  // 界面
-  darkmode: 'switch',
-  themeColor: {
-    blue: '#2196f3',
-    red: '#f26d6d',
-    orange: '#fb9b5f'
-  },
-  iconAssets: 'iconfont',
-  fullscreen: true,
-  // backToTop: true,
-  pure: false,
-
-  // 当前网站部署到的域名
+  // 基本配置
   hostname: 'https://hanekawa.top',
   author: {
     name: 'kamishima-kaede',
     url: 'https://hanekawa.top'
   },
+  locales: {},
 
+  // 主题功能选项
+  // 博客配置 plugins.blog => true
+  // 加密配置 encrypt
+
+  // 主题布局选项
+  navbar: navbar,
+  navbarIcon: true,
+  navbarLayout: { left: ['Brand'], center: ['Links'], right: ['Language', 'Repo', 'Outlook', 'Search'] },
+  navbarAutoHide: 'mobile',
   logo: '/assets/svg/logo.svg',
   logoDark: '/assets/svg/logo.svg',
-  // 默认为 GitHub. 同时也可以是一个完整的 URL
-  repo: 'kamishima-kaede/blog',
-  // 自定义仓库链接文字。默认从 `repo` 中自动推断为
-  // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
-  repoLabel: 'GitHub',
-  // 是否在导航栏内显示仓库链接，默认为 `true`
-  repoDisplay: true,
+  repo: 'kamishima-kaede/blog', // 默认为 GitHub. 同时也可以是一个完整的 URL
+  repoLabel: 'GitHub', // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
+  repoDisplay: true, // 是否在导航栏内显示仓库链接，默认为 `true`
+  hideSiteNameonMobile: true, // 是否在移动视图下隐藏站点名称
 
-  // navbar
-  navbar: navbar,
-  // sidebar
   sidebar: sidebar,
-  navbarLayout: {
-    left: ['Brand'],
-    center: ['Links'],
-    right: ['Repo', 'Outlook', 'Search']
-  },
+  sidebarIcon: true,
+  headerDepth: 2,
 
-  docsDir: 'demo/src',
+  breadcrumb: true, // 路径导航
+  prevLink: true,
+  nextLink: true,
+
+  titleIcon: true,
+  /** 
+    "Author": 作者
+    "Date": 写作日期
+    "Original": 是否原创
+    "Category": 分类
+    "Tag": 标签
+    "ReadingTime": 预计阅读时间
+    "Word": 字数
+    "PageView": 页面浏览量
+    文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 false 使其被禁用。
+  */
+  pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime', 'Word', 'PageView'],
+  lastUpdated: true,
+  contributors: true,
+  editLink: true,
+  docsDir: 'docs',
 
   footer: '',
-
   displayFooter: true,
+  copyright: 'Copyright © 2020-present kamishima-kaede',
+  toc: true,
 
-  pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
+  // 主题外观选项
+  iconAssets: 'iconfont',
+  darkmode: 'auto',
 
   blog: {
     sidebarDisplay: 'mobile',
@@ -102,17 +114,17 @@ export default hopeTheme({
 
     pwa: {
       update: 'disable',
-      favicon: "/favicon.ico",
-      themeColor: "#5c92d1",
+      favicon: '/favicon.ico',
+      themeColor: '#5c92d1',
       cacheHTML: false,
       maxSize: 3072,
       apple: {
-        icon: "/assets/icons/apple-touch-icon.png",
-        statusBarColor: "white",
+        icon: '/assets/icons/apple-touch-icon.png',
+        statusBarColor: 'white'
       },
       msTile: {
-        image: "/assets/icons/ms-icon-144.png",
-        color: "#ffffff",
+        image: '/assets/icons/ms-icon-144.png',
+        color: '#ffffff'
       },
       manifest: {
         name: 'Mr.Hope 的个人博客',
