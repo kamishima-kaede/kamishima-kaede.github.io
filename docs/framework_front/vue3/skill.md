@@ -1,3 +1,6 @@
+---
+article: false
+---
 # 七. `Vue` 积累---修饰符
 
 本文转载自[Vue中文社区](https://mp.weixin.qq.com/s/pGMAwT_QaKY0t3iLvDar1A)

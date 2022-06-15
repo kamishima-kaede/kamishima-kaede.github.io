@@ -1,4 +1,6 @@
-
+---
+article: false
+---
 # 四、Composition API 的优势
 
 ## 1.Options API 存在的问题

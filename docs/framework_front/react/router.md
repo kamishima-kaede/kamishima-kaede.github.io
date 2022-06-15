@@ -1,3 +1,6 @@
+---
+article: false
+---
 # Router
 
 react-router是跨平台的。  

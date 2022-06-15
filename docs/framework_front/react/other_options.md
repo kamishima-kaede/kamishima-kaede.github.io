@@ -1,3 +1,6 @@
+---
+article: false
+---
 # 其他注意事项
 
 ## 1. setState更新状态的2种写法

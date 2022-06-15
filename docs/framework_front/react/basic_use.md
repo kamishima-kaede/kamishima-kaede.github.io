@@ -1,3 +1,6 @@
+---
+article: false
+---
 # 基本使用
 
 ## 虚拟`DOM`

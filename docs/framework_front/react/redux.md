@@ -1,3 +1,6 @@
+---
+article: false
+---
 # Redux
 
 ## 1.求和案例_redux精简版

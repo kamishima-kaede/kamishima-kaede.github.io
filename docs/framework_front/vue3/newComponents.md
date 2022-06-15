@@ -1,3 +1,6 @@
+---
+article: false
+---
 # 五、新的组件
 
 ## 1.Fragment

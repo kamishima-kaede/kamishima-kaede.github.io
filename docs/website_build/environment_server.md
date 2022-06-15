@@ -1,19 +1,6 @@
-- [环境服务配置](./environment_server.html#环境服务配置)
-  - [`git`](./environment_server.html#git)
-    - [安装](./environment_server.html#安装)
-    - [配置](./environment_server.html#配置)
-    - [生成ssh密钥](./environment_server.html#生成ssh密钥)
-    - [测试连接](./environment_server.html#测试连接)
-  - [`Node`](./environment_server.html#node)
-  - [`Nginx`](./environment_server.html#nginx)
-    - [安装](./environment_server.html#安装-1)
-    - [添加虚拟机配置](./environment_server.html#添加虚拟机配置)
-    - [`nginx`反向代理配置](./environment_server.html#nginx反向代理配置)
-    - [关闭`nginx`版本号露出](./environment_server.html#关闭nginx版本号露出)
-  - [免费`SSL`证书启用](./environment_server.html#免费ssl证书启用)
-    - [安装](./environment_server.html#安装-2)
-  - [`UFW`防火墙](./environment_server.html#ufw防火墙)
-  - [参考](./environment_server.html#参考)
+---
+article: false
+---
 # 环境服务配置
 
 一台安装有`node`和`nginx`的`linux`服务器,这里用的`linux`发行版是`ubuntu`

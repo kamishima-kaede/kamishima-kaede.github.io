@@ -2,8 +2,11 @@
 title: 前端自动化部署
 icon: linux
 category: 运维
-tag: backend
-# isOriginal: true
+tag:
+  - node
+  - nginx
+  - ubuntu
+isOriginal: true
 date: 2022-03-10
 ---
 

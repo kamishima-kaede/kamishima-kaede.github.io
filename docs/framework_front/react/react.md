@@ -1,3 +1,6 @@
+---
+article: false
+---
 # React
 
 [英文官网:](https://reactjs.org/)  

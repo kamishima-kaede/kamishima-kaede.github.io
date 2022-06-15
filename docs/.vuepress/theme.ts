@@ -68,8 +68,9 @@ export default hopeTheme({
     avatar: '/assets/svg/logo.svg',
     // roundAvatar: true,
     name: 'Kamishima-kaede',
-    description: '一位前端菜鸟'
-    // intro: '/intro.html'
+    description: '半吊子前端',
+    intro: '/aboutme.html',
+    // timeline: '发布于'
   },
 
   encrypt: {
@@ -78,7 +79,9 @@ export default hopeTheme({
     }
   },
   plugins: {
-    blog: true,
+    blog: {
+      autoExcerpt: true
+    },
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!

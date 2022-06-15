@@ -1,3 +1,6 @@
+---
+article: false
+---
 # 二、常用 Composition API
 
 官方文档: <https://v3.cn.vuejs.org/guide/composition-api-introduction.html>

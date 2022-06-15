@@ -1,9 +1,6 @@
-- [`windows`启动`ssh-agent`](./environment_windows.html#windows启动ssh-agent)
-  - [将私钥添加到`ssh-agent`](./environment_windows.html#将私钥添加到ssh-agent)
-  - [`ssh`代理设置](./environment_windows.html#ssh代理设置)
-  - [参考](./environment_windows.html#参考)
-
-
+---
+article: false
+---
 # `windows`启动`ssh-agent`
 
 `Windows10`自带了一个非常方便的`ssh-agent`服务，我们只需要在`Windows`的服务列表里面启用该服务就能在`CMD`或`PowerShell`里直接使用`ssh-add`添加密钥，实现`ssh`免密登录。
