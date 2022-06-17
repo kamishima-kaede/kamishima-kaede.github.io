@@ -55,7 +55,7 @@ export default hopeTheme({
 
   footer: '',
   displayFooter: true,
-  copyright: 'Copyright © 2020-present kamishima-kaede',
+  copyright: 'Copyright © 2018-present kamishima-kaede',
   toc: true,
 
   // 主题外观选项
@@ -69,15 +69,15 @@ export default hopeTheme({
     // roundAvatar: true,
     name: 'Kamishima-kaede',
     description: '半吊子前端',
-    intro: '/aboutme.html',
+    intro: '/about/aboutme.html',
     // timeline: '发布于'
   },
 
-  encrypt: {
-    config: {
-      '/guide/encrypt.html': ['1234']
-    }
-  },
+  // encrypt: {
+  //   config: {
+  //     '/guide/encrypt.html': ['1234']
+  //   }
+  // },
   plugins: {
     blog: {
       autoExcerpt: true
