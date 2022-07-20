@@ -22,7 +22,7 @@ export default hopeTheme({
   navbarAutoHide: 'mobile',
   logo: '/assets/svg/logo.svg',
   logoDark: '/assets/svg/logo.svg',
-  repo: 'kamishima-kaede/blog', // 默认为 GitHub. 同时也可以是一个完整的 URL
+  repo: 'kamishima-kaede/kamishima-kaede.github.io', // 默认为 GitHub. 同时也可以是一个完整的 URL
   repoLabel: 'GitHub', // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
   repoDisplay: true, // 是否在导航栏内显示仓库链接，默认为 `true`
   hideSiteNameonMobile: true, // 是否在移动视图下隐藏站点名称
@@ -85,28 +85,29 @@ export default hopeTheme({
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      provider: 'Giscus',
-      repo: 'vuepress-theme-hope/giscus-discussions',
-      repoId: 'R_kgDOG_Pt2A',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDOG_Pt2M4COD69'
+    comment: false,
+    // comment: {
+    //   /**
+    //    * Using Giscus
+    //    */
+    //   // provider: 'Giscus',
+    //   // repo: 'vuepress-theme-hope/giscus-discussions',
+    //   // repoId: 'R_kgDOG_Pt2A',
+    //   // category: 'Announcements',
+    //   // categoryId: 'DIC_kwDOG_Pt2M4COD69'
 
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+    //   /**
+    //    * Using Twikoo
+    //    */
+    //   // provider: "Twikoo",
+    //   // envId: "https://twikoo.ccknbc.vercel.app",
 
-      /**
-       * Using Waline
-       */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    },
+    //   /**
+    //    * Using Waline
+    //    */
+    //   // provider: "Waline",
+    //   // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    // },
 
     mdEnhance: {
       enableAll: true,

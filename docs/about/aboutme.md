@@ -5,6 +5,7 @@ icon: people
 tag:
   - 个人介绍
 timeline: false
+article: false
 star: true
 ---
 
