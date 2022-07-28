@@ -1,3 +1,15 @@
+---
+title: 镜像源收集
+icon: link
+category: 开发必备
+tag:
+  - node
+  - pnpm
+  - linux
+isOriginal: true
+timeline: true
+date: 2021-07-28
+---
 # 镜像源
 
 收集整理各种开发中用到的镜像源
@@ -5,6 +17,38 @@
 [阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)
 
 ## 1.前端
+
+### `pnpm`
+
+官网:[中文](https://www.pnpm.cn/)|[英文](https://pnpm.io/)
+
+`pnpm`不仅能作为`JavaScript`的包管理工具,而且可以作为`nodejs`的版本管理工具,这是我推荐它的最主要原因,当然相比于`npm`和`yarn`它还有其他很多优点,可以去官网了解下.
+
+
+在 POSIX 类系统上，即使尚未安装 Node.js，也可以使用以下脚本安装 pnpm：
+
+```bash
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
+如果没有安装 curl，可以使用 wget：
+
+```bash
+wget -qO- https://get.pnpm.io/install.sh | sh -
+```
+
+在 Windows 系统上（PowerShell）：
+
+```bash
+iwr https://get.pnpm.io/install.ps1 -useb | iex
+```
+
+然后就可以使用`pnpm env`命令来安装`Node.js`了。
+
+```bash
+pnpm config set registry https://registry.npmmirror.com/
+```
+
 
 ### `nvm`
 
@@ -15,7 +59,7 @@ nodejs版本管理工具
 
 设置镜像
 
-```text
+```bash
 nvm node_mirror https://npmmirror.com/mirrors/node/
 nvm npm_mirror  https://npmmirror.com/mirrors/npm/
 ```
@@ -26,20 +70,20 @@ nvm npm_mirror  https://npmmirror.com/mirrors/npm/
 
 1.查看当前源地址
 
-```text
+```bash
 npm config get registry
 ```
 
 2.设置淘宝镜像【不建议，影响其他指令】
 
-```text
+```bash
 npm config set registry https://registry.npmmirror.com/
 ```
 
 3.NPM镜像的管理工具
 安装：`npm install -g nrm`
 
-```text
+```bash
 # 查看所有镜像
 nrm ls
 
@@ -64,20 +108,20 @@ nrm use taobao
 
 1.查看当前源地址
 
-```text
+```bash
 yarn config get registry
 ```
 
 2.设置淘宝镜像【不建议，影响其他指令】
 
-```text
+```bash
 yarn config set registry https://registry.npmmirror.com/
 ```
 
 3.YARN镜像的管理工具
 安装：`yarn global add yrm`
 
-```text
+```bash
 # 查看所有镜像
 yrm ls
 
@@ -95,7 +139,7 @@ yrm use taobao
 
 ### `electron`镜像设置
 
-```text
+```bash
 yarn config set electron_mirror https://npmmirror.com/mirrors/electron/
 ```
 
@@ -110,7 +154,7 @@ yarn config set electron_mirror https://npmmirror.com/mirrors/electron/
 
 ubuntu 20.04(focal) 配置如下
 
-```text
+```bash
 deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
 
