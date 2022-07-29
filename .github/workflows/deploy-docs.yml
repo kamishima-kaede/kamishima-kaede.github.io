@@ -24,15 +24,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: pnpm
+          cache: yarn
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=4096
-        run: pnpm run build
+        run: yarn run build
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
