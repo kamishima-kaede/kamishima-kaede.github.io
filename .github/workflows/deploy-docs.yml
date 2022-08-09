@@ -8,6 +8,7 @@ on:
 
 jobs:
   deploy-gh-pages:
+    name: Deploy Gh Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,24 +22,23 @@ jobs:
           version: 7
 
 
-      - name: 设置 Node.js
+      - name: Set Node Version
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: 'pnpm'
 
-      - name: 安装依赖
+      - name: Install Dependencies
         run: pnpm install
 
-      - name: 构建文档
+      - name: Building
         env:
           NODE_OPTIONS: --max_old_space_size=4096
         run: pnpm run build
 
-      - name: 部署文档
+      - name: Deploy Dist
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 这是文档部署到的分支名称
           branch: gh-pages
           folder: dist
-
