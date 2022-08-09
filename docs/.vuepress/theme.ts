@@ -98,7 +98,7 @@ export default hopeTheme({
     },
 
     pwa: {
-      update: 'disable',
+      update: 'available',
       favicon: '/favicon.ico',
       themeColor: '#5c92d1',
       cacheHTML: false,
@@ -112,9 +112,9 @@ export default hopeTheme({
         color: '#ffffff'
       },
       manifest: {
-        name: 'Mr.Hope 的个人博客',
-        short_name: 'Mr.Hope Blog',
-        description: 'Mr.Hope 的个人博客',
+        name: 'Kamishima-kaede 的个人博客',
+        short_name: 'Kamishima-kaede Blog',
+        description: 'Kamishima-kaede 的个人博客',
         theme_color: '#5c92d1',
         icons: [
           {
