@@ -40,3 +40,4 @@ date: 2022-03-10
   - [自动更新代码](./pm2&bash.html#自动更新代码)
   - [打包部署](./pm2&bash.html#打包部署)
   - [持久化服务](./pm2&bash.html#持久化服务)
+  - [github actions](./giuhub_actions.html)

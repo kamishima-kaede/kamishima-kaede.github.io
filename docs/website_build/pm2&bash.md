@@ -128,7 +128,7 @@ cp -r "./dist" $OUTPUT/
 echo "==========部署成功==========" >> $LOG/$LogNameDATE.log
 ```
 
-如果服务器资源比较紧张,也可以通过`github actions`自动化打包,并自动化部署,[步骤待补...]()
+如果服务器资源比较紧张,也可以通过`github actions`自动化打包,并自动化部署,[参考步骤](./giuhub_actions.html)
 
 ## 持久化服务
 
