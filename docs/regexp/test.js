@@ -13,7 +13,11 @@
 // [ 'a1b', 'a2b', 'a3b' ]
 
 
-const reg3 = /\d{2,5}?/g;
-const str3 = "123 1234 12345 123456";
-console.log( str3.match(reg3) );
+// const reg3 = /\d{2,5}?/g;
+// const str3 = "123 1234 12345 123456";
+// console.log( str3.match(reg3) );
 // [ '12', '12', '34', '12', '34', '12', '34', '56' ]
+
+const str4 = `<div id="container" class="main"></div>`
+const reg4 = /id="[^"]*"/
+console.log(str4.match(reg4));
