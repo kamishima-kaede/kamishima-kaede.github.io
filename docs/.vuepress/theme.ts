@@ -60,7 +60,7 @@ export default hopeTheme({
 
   // 主题外观选项
   iconAssets: 'iconfont',
-  darkmode: 'auto',
+  darkmode: 'switch',
 
   blog: {
     sidebarDisplay: 'mobile',
@@ -73,11 +73,6 @@ export default hopeTheme({
     // timeline: '发布于'
   },
 
-  // encrypt: {
-  //   config: {
-  //     '/guide/encrypt.html': ['1234']
-  //   }
-  // },
   plugins: {
     blog: {
       autoExcerpt: true
