@@ -43,6 +43,27 @@ console.log(res1);
 console.log(res2);
 // #[J#S]# L#e#s#s#o#n#_#0#1.m#p#4
 ```
-### 1.3. `\b`和`\B`
+### 1.3. `(?=p)`和`(?!p)`
 
-(?=p)，其中 p 是一个子模式，即 p 前面的位置，或者说，该位置后面的字符要匹配 p。
+(?=p)，其中 p 是一个子模式，即 p 前面的位置，或者说，该位置后面的字符要匹配 p。而 (?!p) 就是 (?=p) 的反面意思。  
+二者的学名分别是 positive lookahead 和 negative lookahead。正向先行断言和负向先行断言
+
+ES5 之后的版本，会支持 positive lookbehind 和 negative lookbehind。具体是 (?<=p) 和 (?<!p)。
+
+```js
+const res1 = '[JS] Lesson_01.mp4'.replace(/\b/g, '#');
+const res2 = '[JS] Lesson_01.mp4'.replace(/\B/g, '#');
+console.log(res1);
+// [#JS#] #Lesson_01#.#mp4#
+console.log(res2);
+// #[J#S]# L#e#s#s#o#n#_#0#1.m#p#4
+```
+
+### 1.4. 位置的特性
+
+对于位置的理解，我们可以理解成空字符 ""。
+
+
+## 1.5.1
+
+### 1.5.1 数字的千位分隔符表示法
