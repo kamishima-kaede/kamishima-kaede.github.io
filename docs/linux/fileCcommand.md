@@ -13,4 +13,10 @@ ls -a # 命令的参数-a 是--all 的简写，意思是列出所有文件，包
 cd # change directory 切换目录
 
 ls -l #参数-l，意思是输出文件的详细内容（long listing format）
+ls -l /etc/sudoers #可查看该文件的所有者
+groups root achao
+
+
+
+
 ```
