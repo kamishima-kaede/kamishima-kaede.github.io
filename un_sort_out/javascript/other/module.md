@@ -43,7 +43,7 @@ CMD规范更多的来自于`Modules/2.0`的观点，但尽可能去掉了学院�
 
 ## 代码实现
 
-```shell
+```bash
 早期代码的问题
     1.无法解决文件的依赖问题
     2.全局函数命名冲突
@@ -57,7 +57,7 @@ CMD规范更多的来自于`Modules/2.0`的观点，但尽可能去掉了学院�
 
 ### 模块化方案1-sea.js
 
-```shell
+```bash
 解决了依赖问题
 解决了命名冲突
 
@@ -115,7 +115,7 @@ define(function(require, exports, module) {
 
 ### 模块化方案2-commonjs
 
-```shell
+```bash
 1.每个文件是一个模块，有自己的作用域
 2.在模块内部  module变量代表模块本身
 3.module.exports属性代表模块对外的接口
@@ -183,7 +183,7 @@ b.index2();
 
 ```
 
-```shell
+```bash
 安装browserify -g全局
     npm install browserify -g
 查看安装目录
@@ -196,7 +196,7 @@ b.index2();
 
 ### 模块化方案3-ES6
 
-```shell
+```bash
 ES6模块化方案,可以静态分析,编译阶段即可解析分析
     import
         import+代码块

@@ -10,19 +10,19 @@ isOriginal: true
 timeline: true
 date: 2021-07-28
 ---
-# 镜像源
 
-收集整理各种开发中用到的镜像源
+本人常用的镜像站点:  
+- [中科大镜像源](https://mirrors.ustc.edu.cn/)  
+- [阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)  
+- [华为开源镜像站](https://mirrors.huaweicloud.com/)  
 
-[阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)
-
-## 1.前端
+## 常用开发工具镜像设置
 
 ### `pnpm`
 
 官网:[中文](https://www.pnpm.cn/)|[英文](https://pnpm.io/)
 
-`pnpm`不仅能作为`JavaScript`的包管理工具,而且可以作为`nodejs`的版本管理工具,这是我推荐它的最主要原因,当然相比于`npm`和`yarn`它还有其他很多优点,可以去官网了解下.
+`pnpm`不仅能作为`JavaScript`的包管理工具,而且可以作为`nodejs`的版本管理工具
 
 
 在 POSIX 类系统上，即使尚未安装 Node.js，也可以使用以下脚本安装 pnpm：
@@ -44,13 +44,43 @@ iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
 
 然后就可以使用`pnpm env`命令来安装`Node.js`了。
+```bash
+# 安装 LTS 版本的 Node.js
+pnpm env use --global lts
+pnpm env use --global argon
 
+# 安装 v16 的Node.js
+pnpm env use --global 16
+
+# 安装 Node.js 的预发行版本
+pnpm env use --global nightly
+pnpm env use --global rc
+pnpm env use --global 16.0.0-rc.0
+pnpm env use --global rc/14
+
+# 安装最新版本的 Node.js
+pnpm env use --global latest
+
+# 查看本地Node.js列表
+pnpm env list
+
+# 查看远程可用Node.js列表
+pnpm env list --remote
+
+# 查看远程可用指定Node.js版本
+pnpm env list --remote 16
+
+# 移除指定版本的 Node.js
+pnpm env remove --global 14.0.0
+```
+
+设置npm包镜像地址：
 ```bash
 pnpm config set registry https://registry.npmmirror.com/
 ```
 
 
-### `nvm`
+### `nvm`(不推荐)
 
 nodejs版本管理工具
 
@@ -64,7 +94,7 @@ nvm node_mirror https://npmmirror.com/mirrors/node/
 nvm npm_mirror  https://npmmirror.com/mirrors/npm/
 ```
 
-### `npm`
+### `npm`(不推荐)
 
 `node`包管理工具
 
@@ -81,7 +111,12 @@ npm config set registry https://registry.npmmirror.com/
 ```
 
 3.NPM镜像的管理工具
-安装：`npm install -g nrm`
+安装：
+```bash
+npm install -g nrm
+# 或者
+pnpm add -g nrm
+```
 
 ```bash
 # 查看所有镜像
@@ -102,7 +137,7 @@ nrm use taobao
 
 [中国NPM镜像](http://www.npmmirror.com/)
 
-### `yarn`
+### `yarn`(不推荐)
 
 `node`包管理工具
 
@@ -140,34 +175,14 @@ yrm use taobao
 ### `electron`镜像设置
 
 ```bash
-yarn config set electron_mirror https://npmmirror.com/mirrors/electron/
+pnpm config set electron_mirror https://npmmirror.com/mirrors/electron/
 ```
-
-## 2.linux
 
 ### `Ubuntu`镜像
 
-手动更改
+手动更改  
 用你熟悉的编辑器打开：`/etc/apt/sources.list`
 
-替换默认的`http://archive.ubuntu.com/`为`mirrors.aliyun.com`
+替换默认的连接
 
-ubuntu 20.04(focal) 配置如下
-
-```bash
-deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-
-deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-
-deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-
-deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-
-deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-
-```
+`Ubuntu`各个版本国内镜像源请在头部连接中查找

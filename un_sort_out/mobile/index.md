@@ -2,7 +2,7 @@
 
 ## 1.像素
 
-```shell
+```bash
 像素
     1.css像素/设备无关像素  --抽象单位
         相对单位,相对于物理像素
@@ -31,7 +31,7 @@
     因为默认情况下，设备独立像素，像素比跟浏览器没有一点关系，都是设备的东西。
 ```
 
-```shell
+```bash
 像素比 = 物理像素 / 独立设备像素
     (比较的是个数,不是面积)
     一个方向上设备所占据的物理像素的个数 / 一个方向上设备所占据的独立设备像素的个数
@@ -39,7 +39,7 @@
 
 ### css像素与物理像素
 
-```shell
+```bash
 比较屏幕大小,不能使用分辨率
 设备没有css像素概念,只有web开发有
 
@@ -54,7 +54,7 @@ css像素是浏览器中特有的概念
 
 ### 位图像素与物理像素
 
-```shell
+```bash
 图片完美清晰展示的前提
     一个物理像素对应上  一个位图像素    图片完美清晰的展现
     多个物理像素对应上   一个位图像素   失帧
@@ -63,7 +63,7 @@ css像素是浏览器中特有的概念
 
 ## 2.视口(css像素)
 
-```shell
+```bash
 视口是浏览器的概念
 
 布局视口--决定页面布局-->好处?不会重绘重排
@@ -90,7 +90,7 @@ css像素是浏览器中特有的概念
         同一款浏览器在不同设备上拥有不同的理想视口。
 ```
 
-```shell
+```bash
 布局视口与视觉视口的关系
     从物理像素的角度出发，视觉视口包含物理像素的个数永远等于设备的分辨率;
     从css像素角度出发，我们无法准确的判断视觉视口的尺寸，因为视觉视口所包含的css像素的个数跟用户的缩放行为有关;
@@ -99,11 +99,11 @@ css像素是浏览器中特有的概念
 
 ## 3.`viewport`
 
-```shell
+```bash
 <meta name = 'viewport' wi...>
 ```
 
-```shell
+```bash
 BUG
     width = device-width
     div with=500
@@ -112,18 +112,18 @@ BUG
     同时写上width = device-width  initaial-scale = 1.0
 ```
 
-```shell
+```bash
 width = device-width
 布局视口的宽度 = 理想是楼的宽度
 像素比 = 一个方向上物理像素的个数 / 一个方向上css像素的个数
 ```
 
-```shell
+```bash
 initaial-scale = 1.0  相对于理想视口
 系统缩放 改变布局视口/改变视觉视口
 ```
 
-```shell
+```bash
 user-scalable = no禁止用户缩放
 minimum-scale=1
 maximum-scale=
@@ -131,11 +131,11 @@ maximum-scale=
 
 ## 适配方案
 
-```shell
+```bash
 等比
 ```
 
-```shell
+```bash
 当使用meta标签后保持等比
 默认情况下适配
 ```
@@ -151,7 +151,7 @@ maximum-scale=
 })()
 ```
 
-```shell
+```bash
 百分比适配
     优势:不用适配方案
     劣势:维护费劲
@@ -172,7 +172,7 @@ var metaNode = document.querySelector("meta[name=viewport]");
 metaNode.content =`initial-scale=${scale}`
 ```
 
-```shell
+```bash
 百分比适配
     优势:不用适配方案
     劣势:维护费劲

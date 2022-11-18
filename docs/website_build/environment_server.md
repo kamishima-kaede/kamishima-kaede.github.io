@@ -11,27 +11,27 @@ article: false
 
 ### 安装
 
-```shell
-sudo apt-get update
-sudo apt-get install git
+```bash
+sudo apt update
+sudo apt install git
 ```
 
 ### 配置
 
-```shell
+```bash
 git config --global user.name "用户名"
 git config --global user.email "邮箱地址"
 ```
 
 ### 生成ssh密钥
 
-```shell
+```bash
 ssh-keygen -C 'you email address@gmail.com' -t rsa
 # 会在用户目录~/.ssh/下建立相应的密钥文件。
 ```
 
 进入`~/.ssh`文件夹，输入
-```shell
+```bash
 # 打开id_rsa.pub文件，复制其中所有内容。
 cat id_rsa.pub
 ```
@@ -39,61 +39,50 @@ cat id_rsa.pub
 复制公钥并在github中配置SSH公钥
 
 ### 测试连接
-```shell
+```bash
 ssh -T git@github.com
 ```
 
-## `Node`
+## 安装`Node.js`
 
-推荐使[nvm](https://github.com/nvm-sh/nvm)版本管理工具管理`node`版本
+~~推荐使[nvm](https://github.com/nvm-sh/nvm)版本管理工具管理`node`版本~~  
 
-安装`nvm`
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-或者
-```shell
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
+~~安装`nvm`~~  
+~~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash~~  
+~~或者~~  
+~~wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash~~  
 
-**安装完成后务必重启!!**
+推荐使用[pnpm](https://pnpm.io/)安装和管理`Node.js`
 
-安装`node`
-```shell
-nvm install 16.14.0
-```
+可以参考之前的[教程](/dev-tools/mirror_source.html#pnpm)
 
-切换并使用`node`版本
-```shell
-nvm use 16.14.0
-```
-
-其他操作参考[nvm](https://github.com/nvm-sh/nvm)
 
 ## `Nginx`
 
 ### 安装
 
-更新包列表
-```shell
-sudo apt-get update
-```
-
 安装
-```shell
-sudo apt-get install nginx
+```bash
+sudo apt update
+sudo apt install nginx
 ```
 
 常用命令
 
-```shell
+```bash
 # 启动服务
 nginx
+
+# 查看版本
+nginx -v
 
 # 关闭服务
 nginx -s stop
 # 或者
 nginx -s quit
+
+# 更新nginx配置后,测试配置
+nginx -t
 
 # 更新配置后重新载入
 nginx -s reload
@@ -103,7 +92,7 @@ nginx -s reload
 
 切到`nginx`配置目录
 
-```shell
+```bash
 cd /etc/nginx/conf.d
 ```
 
@@ -137,7 +126,7 @@ server {
 
 保存配置后,执行检查配置命令
 
-```shell
+```bash
 sudo nginx -t
 ```
 
@@ -145,7 +134,7 @@ sudo nginx -t
 
 最后重启`nginx`服务
 
-```shell
+```bash
 sudo nginx -s reload
 ```
 
@@ -161,7 +150,7 @@ sudo nginx -s reload
 
 在`/etc/nginx/conf.d`文件夹下面新增一个配置文件：
 
-```shell
+```bash
 sudo vi /etc/nginx/conf.d/fuckqq-5000.conf
 ```
 
@@ -209,7 +198,7 @@ server {
 
 这个版本号通常可以在 Web 端的 header 里看到。安全起见，可以通过配置隐藏掉，如下打开`nginx.conf`文件：
 
-```shell
+```bash
 sudo vi /etc/nginx/nginx.conf
 ```
 
@@ -220,23 +209,25 @@ sudo vi /etc/nginx/nginx.conf
 
 ## 免费`SSL`证书启用
 
+<Badge text="tip" type="tip" />如有需求泛域名证书申请安装及配置的可以参考这篇[教程](./domainNameSSL.md)
+
 这里使用`Certbot`获取证书,以下操作适用于`ubuntu + nginx`,其他环境可以参考[Certbot官网](https://certbot.eff.org/)
 
 1.安装`snapd`,通过`snapd`安装`certbot`
-```shell
+```bash
 # 安装snapd
 sudo apt update
 sudo apt install snapd
 
 # 安装certbot
 # 在安装 Certbot 之前，最好先移除历史快照。
-sudo apt-get remove certbot
+sudo apt remove certbot
 # 安装
 sudo snap install --classic certbot
 ```
 
 2.生成证书
-```shell
+```bash
 # 自动配置
 sudo certbot --nginx
 ```
@@ -247,21 +238,21 @@ sudo certbot --nginx
 `E: The repository 'http://ppa.launchpad.net/certbot/certbot/ubuntu focal Release' does not have a Release file`
 
 执行以下命令
-```shell
+```bash
 sudo apt-add-repository -r ppa:certbot/certbot
 ```
 
 然后再更新
-```shell
+```bash
 sudo apt update
-sudo apt-get update
+sudo apt update
 ```
 :::
 
 
 ### 安装
 
-```shell
+```bash
 sudo certbot --nginx
 ```
 
@@ -271,7 +262,7 @@ sudo certbot --nginx
 
 每次生成的证书有效期是90天，到期后需要重新申请，如果你想在证书到期前自动续订可以执行
 
-```shell
+```bash
 sudo certbot renew --dry-run
 ```
 
@@ -284,7 +275,7 @@ sudo certbot renew --dry-run
 防火墙是用于监控和过滤传入和传出网络流量的工具。 它通过定义一组确定是允许还是阻止特定流量的安全规则来工作
 
 常用操作
-```shell
+```bash
 # 安装
 sudo apt update
 sudo apt install ufw

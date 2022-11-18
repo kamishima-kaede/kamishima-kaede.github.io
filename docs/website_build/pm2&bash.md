@@ -81,7 +81,7 @@ function runCommand(cmd, args, callback) {
 打包部署就是通过`bash`脚本实现,没什么好说的,直接上脚本
 
 自动化脚本如下
-```shell
+```bash
 #! /bin/bash
 
 # 任意命令出错时终止运行
@@ -140,18 +140,18 @@ echo "==========部署成功==========" >> $LOG/$LogNameDATE.log
 
 这里我们全局安装`pm2`
 
-```shell
+```bash
 npm i -g pm2@latest
 ```
 
 `cd`到`node`服务的目录后,执行启动目录
 
-```shell
+```bash
 pm2 start ./webhook.js
 ```
 
 `pm2`常用操作
-```shell
+```bash
 # 启动命令
 pm2 start app.js # 启动nodeJs应用，进程的默认名称为文件名app
 pm2 start app.js --name mynode # 启动node，并指定进程名称为mynode

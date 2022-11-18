@@ -29,7 +29,7 @@ export default hopeTheme({
 
   sidebar: sidebar,
   sidebarIcon: true,
-  headerDepth: 2,
+  headerDepth: 3,
 
   breadcrumb: true, // 路径导航
   prevLink: true,
@@ -50,7 +50,7 @@ export default hopeTheme({
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime', 'Word', 'PageView'],
   lastUpdated: true,
   contributors: true,
-  editLink: true,
+  editLink: false,
   docsDir: 'docs',
 
   footer: '',
@@ -85,12 +85,28 @@ export default hopeTheme({
       serverURL: "https://blog-q5gt9jo8g-kamishima-kaede.vercel.app/",
     },
 
-    mdEnhance: {
-      enableAll: true,
-      presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
-      }
-    },
+    // mdEnhance: {
+    //   align: true,
+    //   attrs: true,
+    //   chart: true,
+    //   codetabs: true,
+    //   container: true,
+    //   demo: true,
+    //   echarts: true,
+    //   flowchart: true,
+    //   gfm: true,
+    //   imageSize: true,
+    //   include: true,
+    //   lazyLoad: true,
+    //   mark: true,
+    //   mermaid: true,
+    //   playground: {
+    //     presets: ["ts", "vue"],
+    //   },
+    //   presentation: {
+    //     plugins: ["highlight", "math", "search", "notes", "zoom"],
+    //   },
+    // },
 
     pwa: {
       update: 'available',

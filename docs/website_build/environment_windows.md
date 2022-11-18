@@ -35,7 +35,7 @@ Automatic
 - `Windows`上是 `~/.ssh/config`
 - `Linux`上是 `/etc/ssh/ssh_config`
 
-```shell
+```bash
 # 查看 ssh-agent 服务状态，这里输出：Stopped
 Get-Service ssh-agent
 # 查看 ssh-agent 服务的启动类型，这里输出：Disabled
@@ -55,7 +55,7 @@ ssh-add -L
 
 复制以下内容到`config`文件,修改对应配置
 
-```shell
+```bash
 Host github.com
   User git
   Port 22
