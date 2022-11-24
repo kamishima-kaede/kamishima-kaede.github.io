@@ -16,9 +16,8 @@ date: 2021-07-28
 - [阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)  
 - [华为开源镜像站](https://mirrors.huaweicloud.com/)  
 
-## 常用开发工具镜像设置
 
-### `pnpm`
+## `pnpm`
 
 官网:[中文](https://www.pnpm.cn/)|[英文](https://pnpm.io/)
 
@@ -42,6 +41,36 @@ wget -qO- https://get.pnpm.io/install.sh | sh -
 ```bash
 iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
+
+设置`npm`包镜像地址：
+```bash
+pnpm config set registry https://registry.npmmirror.com/
+```
+如果设置报错,原因一般是没有安装`npm`,可以手动创建`.npmrc`文件,然后添加:  
+
+```bash
+registry=https://registry.npmmirror.com/
+```
+
+`.npmrc`文件所在位置如下,根据具体情况在所在位置创建:
+- 全局配置文件：`/etc/npmrc`
+- 用户配置文件：`~/.npmrc`
+- 项目配置文件：`$项目根目录/.npmrc`
+
+设置`Node.js`镜像地址：
+```bash
+pnpm config set node-mirror:release https://npmmirror.com/mirrors/node/
+pnpm config set node-mirror:rc https://npmmirror.com/mirrors/node-rc/
+pnpm config set node-mirror:nightly https://npmmirror.com/mirrors/node-nightly/
+```
+
+或者编辑`.npmrc`,添加如下:
+```bash
+node-mirror:release=https://npmmirror.com/mirrors/node/
+node-mirror:rc=https://npmmirror.com/mirrors/node-rc/
+node-mirror:nightly=https://npmmirror.com/mirrors/node-nightly/
+```
+
 
 然后就可以使用`pnpm env`命令来安装`Node.js`了。
 ```bash
@@ -74,13 +103,8 @@ pnpm env list --remote 16
 pnpm env remove --global 14.0.0
 ```
 
-设置npm包镜像地址：
-```bash
-pnpm config set registry https://registry.npmmirror.com/
-```
 
-
-### `nvm`(不推荐)
+## `nvm`(不推荐)
 
 nodejs版本管理工具
 
@@ -94,7 +118,7 @@ nvm node_mirror https://npmmirror.com/mirrors/node/
 nvm npm_mirror  https://npmmirror.com/mirrors/npm/
 ```
 
-### `npm`(不推荐)
+## `npm`(不推荐)
 
 `node`包管理工具
 
@@ -137,7 +161,7 @@ nrm use taobao
 
 [中国NPM镜像](http://www.npmmirror.com/)
 
-### `yarn`(不推荐)
+## `yarn`(不推荐)
 
 `node`包管理工具
 
@@ -172,17 +196,17 @@ yrm use taobao
 
 ```
 
-### `electron`镜像设置
+## `electron`镜像设置
 
 ```bash
 pnpm config set electron_mirror https://npmmirror.com/mirrors/electron/
 ```
 
-### `Ubuntu`镜像
+## `Ubuntu`镜像
 
 手动更改  
-用你熟悉的编辑器打开：`/etc/apt/sources.list`
+用你熟悉的编辑器打开：`/etc/apt/sources.list`,替换默认的连接
 
-替换默认的连接
+本人一般使用中科大源,这是一个中科大源镜像生成工具[https://mirrors.ustc.edu.cn/repogen/](https://mirrors.ustc.edu.cn/repogen/),包括`Archlinux`、`Debian`、`Ubuntu`
 
-`Ubuntu`各个版本国内镜像源请在头部连接中查找
+其他`Ubuntu`国内镜像源请在头部连接中查找
