@@ -9,6 +9,10 @@ tag:
 date: 2021-09-23
 ---
 
+`React` 快速入门教程
+
+<!-- more -->
+
 - [零、React](react.md)
 
 - [一、基本使用](basic_use.md)

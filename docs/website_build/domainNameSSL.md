@@ -10,7 +10,9 @@ isOriginal: true
 date: 2022-11-18
 ---
 
-本教程目的是通过使用`acme.sh`申请`Let's Encrypt`泛域名证书,安装证书及`nginx`配置使用证书,并通过配置实现`ssl`证书自动续期
+本教程记录的是通过使用`acme.sh`申请`Let's Encrypt`泛域名证书,安装证书及`nginx`配置使用证书,并通过配置实现`ssl`证书自动续期
+
+<!-- more -->
 
 ## 环境
 

@@ -11,6 +11,10 @@ timeline: true
 date: 2021-07-28
 ---
 
+开发过程中常用的镜像资源收集记录
+
+<!-- more -->
+
 本人常用的镜像站点:  
 - [中科大镜像源](https://mirrors.ustc.edu.cn/)  
 - [阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)  
@@ -159,7 +163,7 @@ nrm use taobao
 
 4.中国`NPM`镜像
 
-[中国NPM镜像](http://www.npmmirror.com/)
+[国内NPM镜像](https://www.npmmirror.com/)
 
 ## `yarn`(不推荐)
 

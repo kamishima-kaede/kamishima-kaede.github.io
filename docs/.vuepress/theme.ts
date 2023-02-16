@@ -18,14 +18,14 @@ export default hopeTheme({
   // 主题布局选项
   navbar: navbar,
   navbarIcon: true,
-  navbarLayout: { left: ['Brand'], center: ['Links'], right: ['Language', 'Repo', 'Outlook', 'Search'] },
+  navbarLayout: { start: ['Brand'], center: ['Links'], end: ['Language', 'Repo', 'Outlook', 'Search'] },
   navbarAutoHide: 'mobile',
   logo: '/assets/svg/logo.svg',
   logoDark: '/assets/svg/logo.svg',
   repo: 'kamishima-kaede/kamishima-kaede.github.io', // 默认为 GitHub. 同时也可以是一个完整的 URL
   repoLabel: 'GitHub', // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
   repoDisplay: true, // 是否在导航栏内显示仓库链接，默认为 `true`
-  hideSiteNameonMobile: true, // 是否在移动视图下隐藏站点名称
+  hideSiteNameOnMobile: true, // 是否在移动视图下隐藏站点名称
 
   sidebar: sidebar,
   sidebarIcon: true,
@@ -75,7 +75,8 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      excerpt: false
+      excerpt: true,
+      excerptSeparator: '<!-- more -->'
     },
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。

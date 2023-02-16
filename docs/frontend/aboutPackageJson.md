@@ -12,6 +12,7 @@ date: 2022-11-21
 
 本文档中描述的许多行为都受[config](https://docs.npmjs.com/cli/v9/using-npm/config)中描述的配置设置的影响。
 
+<!-- more -->
 
 ## name
 
