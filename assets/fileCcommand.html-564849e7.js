@@ -44,7 +44,7 @@ import{_ as n,W as s,X as a,$ as e}from"./framework-47d528cb.js";const i={},l=e(
 <span class="token function">rm</span> <span class="token parameter variable">-ri</span> <span class="token comment"># -r -i 简写</span>
 <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token comment"># 强制删除</span>
 
-rouch a.txt <span class="token comment"># 创建新文件，也可以用来更新新文件时间戳</span>
+<span class="token function">touch</span> a.txt <span class="token comment"># 创建新文件，也可以用来更新新文件时间戳</span>
 
 <span class="token comment"># linux 每个命令都会返回一个证书，叫做返回值（exit status），每次执行完一个命令后紧接着运行 echo $? 就可以查看上个命令的返回值</span>
 <span class="token comment"># - 0 表示命令正常结束</span>
