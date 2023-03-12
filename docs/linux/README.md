@@ -6,7 +6,7 @@ tag:
   - linux
   - shell
 isOriginal: true
-date: 2022-08-24
+date: 2023-03-12
 ---
 
 - [一些概念](linuxConcept.md)
