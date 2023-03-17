@@ -2,7 +2,7 @@
 article: false
 ---
 
-# 路径
+## 路径
 
 Linux 的文件系统则像一棵倒长的树，它只有一个根：`/`
 
@@ -10,7 +10,7 @@ Linux 的文件系统则像一棵倒长的树，它只有一个根：`/`
 
 **相对路径**（relative path）总是以当前目录开头
 
-# 文件权限
+## 文件权限
 
 **文件权限**（file permission）由4个子串拼接而成
 - 文件类型（1位）
@@ -43,6 +43,7 @@ drwxr-xr-x 3 root root      4096 Jul 29 18:56 acpi
 
 ## `Unix`哲学
 
+- Everything is a file.
 - 没有消息就是最好的消息
 - 一个工具只做一件事
 

@@ -1,7 +1,7 @@
 ---
 article: false
 ---
-
+## 文件相关操作
 
 ```bash
 pwd # print working directory（打印工作目录）

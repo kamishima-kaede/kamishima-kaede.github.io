@@ -68,7 +68,7 @@ export default hopeTheme({
     avatar: '/assets/svg/logo.svg',
     // roundAvatar: true,
     name: 'Kamishima-kaede',
-    description: '半吊子前端',
+    description: 'Nothing is easier than being busy, nothing more difficult than being effective.',
     intro: '/about/aboutme.html',
     // timeline: '发布于'
   },
