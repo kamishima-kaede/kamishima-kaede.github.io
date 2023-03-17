@@ -1,0 +1,3 @@
+import{_ as e,W as a,X as s,$ as n}from"./framework-18b71f17.js";const c={},d=n(`<h2 id="应用和包管理" tabindex="-1"><a class="header-anchor" href="#应用和包管理" aria-hidden="true">#</a> 应用和包管理</h2><p>涉及复杂的实现逻辑和复杂多样的需求，一次性实现所有功能几乎是不可能的。为了解决这个问题，高级编程语言都提供一套模块化组织代码的方法，以便将复杂问题拆解成 多个相对简单的子问题，分别实现对应功能，再组合到一起。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,3),i=[d];function r(t,l){return a(),s("div",null,i)}const _=e(c,[["render",r],["__file","package.html.vue"]]);export{_ as default};
