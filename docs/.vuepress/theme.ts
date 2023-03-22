@@ -101,7 +101,7 @@ export default hopeTheme({
       mark: true,
       figure: true,
       imgLazyload: true,
-      imgMark: false,
+      imgMark: true,
       imgSize: true,
       obsidianImgSize: false,
       tasklist: false,
