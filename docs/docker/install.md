@@ -83,7 +83,6 @@ sudo systemctl restart docker
 镜像加速器 | 镜像加速器地址 | 专属加速器[？](# "需登录后获取平台分配的专属加速器") | 其它加速[？](# "支持哪些镜像来源的镜像加速")
 --- | --- | --- | ---
 [DaoCloud 镜像站](https://github.com/DaoCloud/public-image-mirror) | `https://docker.m.daocloud.io` | |  Docker Hub、GCR、K8S、GHCR、Quay、NVCR 等
-[科大镜像站](https://mirrors.ustc.edu.cn/help/dockerhub.html) | `https://docker.mirrors.ustc.edu.cn` | [仅供内部访问](https://mirrors.ustc.edu.cn/help/dockerhub.html) | Docker Hub、[GCR](https://github.com/ustclug/mirrorrequest/issues/91)、[Quay](https://github.com/ustclug/mirrorrequest/issues/135)
 [阿里云](https://cr.console.aliyun.com) | `https://<your_code>.mirror.aliyuncs.com` | 需登录，系统分配 | Docker Hub
 [网易云](https://c.163yun.com/hub) | `https://hub-mirror.c.163.com` | | Docker Hub
 [Docker 镜像代理](https://dockerproxy.com) | `https://dockerproxy.com` | | Docker Hub、GCR、K8S、GHCR
