@@ -23,7 +23,7 @@ date: 2021-07-28
 
 ## `pnpm`
 
-官网:[中文](https://www.pnpm.cn/)|[英文](https://pnpm.io/)
+官网:[中文](https://pnpm.io/zh)|[英文](https://pnpm.io/)
 
 `pnpm`不仅能作为`JavaScript`的包管理工具,而且可以作为`nodejs`的版本管理工具
 
