@@ -1,0 +1,1 @@
+import{_ as t,W as a,X as o,Z as e,$ as c}from"./framework-f9ba3f0e.js";const r={},s=e("h2",{id:"容器卷",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#容器卷","aria-hidden":"true"},"#"),c(" 容器卷")],-1),n=[s];function _(d,l){return a(),o("div",null,n)}const h=t(r,[["render",_],["__file","volume.html.vue"]]);export{h as default};
