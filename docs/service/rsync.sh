@@ -1,1 +1,0 @@
-docker exec -it mysql mysqldump -uroot -pkamiacg@mysql@mql
