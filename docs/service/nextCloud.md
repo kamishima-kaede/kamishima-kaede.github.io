@@ -10,6 +10,7 @@ tag:
 isOriginal: true
 timeline: true
 date: 2023-04-24
+article: false
 ---
 
 在`Docker`部署`NextCloud`服务，并使用`MySQL`和`Redis`做数据库。
