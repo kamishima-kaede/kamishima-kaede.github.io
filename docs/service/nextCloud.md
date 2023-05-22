@@ -9,8 +9,8 @@ tag:
   - Redis
 isOriginal: true
 timeline: true
-date: 2023-04-24
-article: false
+date: 2023-05-22
+article: true
 ---
 
 在`Docker`部署`NextCloud`服务，并使用`MySQL`和`Redis`做数据库。
@@ -19,7 +19,7 @@ article: false
 
 ## 背景
 
-由于最近[icloudpd](https://github.com/boredazfcuk/docker-icloudpd)在国内无法正常运行同步`icloud`照片，遂寻找替代方案。经过一段时间时间的筛选，最后决定使用`NextCloud`项目部署服务。[NextCloud](https://nextcloud.com/)是一套主打安全、合规的开源私有云存储项目。
+由于最近[icloudpd](https://github.com/boredazfcuk/docker-icloudpd)在国内无法正常同步`icloud`照片，遂寻找替代方案。经过一段时间时间的筛选，最后决定使用`NextCloud`项目部署服务。[NextCloud](https://nextcloud.com/)是一套主打安全、合规的开源私有云存储项目。
 
 此次的部署用的`Docker`环境，使用`MySQL`做数据库，利用`Redis`做服务缓存加速。
 
@@ -164,20 +164,7 @@ nextcloud:26.0.1
 
 本地访问：http://docker所在宿主机ip:8080
 
-
-#### 创建管理员账户和密码
-
-![创建管理员账户和密码]()
-
-#### 指定数据库，即上面的`MySQL`
-
-![连接数据库]()
-
-### 初次使用`NextCloud`建议
-
-概览配置
-
-
+按照提示创建管理员账户和密码&指定数据库，这部分忘记截图了，以后想起来再补。。。
 
 
 ## 参考
