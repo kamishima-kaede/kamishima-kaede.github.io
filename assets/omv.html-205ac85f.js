@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as c,c as a,e as n,b as e,d as o}from"./app-6d1b567b.js";const r={},l=e("p",null,[o("记一次"),e("code",null,"OpenMediaVault"),o("("),e("code",null,"OMV"),o(")系统安装使用。")],-1);function s(_,m){return c(),a("div",null,[l,n(" more ")])}const f=t(r,[["render",s],["__file","omv.html.vue"]]);export{f as default};
