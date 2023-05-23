@@ -69,7 +69,7 @@ export default hopeTheme({
     // roundAvatar: true,
     name: 'Kamishima-kaede',
     description: 'Nothing is easier than being busy, nothing more difficult than being effective.',
-    intro: '/about/aboutme.html',
+    intro: '/about/aboutme.html'
     // timeline: '发布于'
   },
 
@@ -82,14 +82,14 @@ export default hopeTheme({
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
     comment: {
-      provider: "Waline",
-      serverURL: "https://blog-q5gt9jo8g-kamishima-kaede.vercel.app/",
+      provider: 'Waline',
+      serverURL: 'https://blog-q5gt9jo8g-kamishima-kaede.vercel.app/'
     },
 
     mdEnhance: {
       gfm: true,
       container: true,
-      linkCheck: 'dev',
+      checkLinks: { status: 'dev' },
       vPre: true,
       tabs: true,
       codetabs: true,
@@ -129,11 +129,11 @@ export default hopeTheme({
       vuePlayground: true,
       demo: true,
       playground: {
-        presets: ['ts', 'vue'],
+        presets: ['ts', 'vue']
       },
       presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
-      },
+        plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
+      }
     },
 
     pwa: {
