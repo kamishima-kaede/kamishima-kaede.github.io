@@ -21,7 +21,7 @@ article: false
 
 全程选择英文安装，安装完成后再添加中文，不然系统会出现乱码。
 
-安装 omv-extras
+安装`omv-extras`
 
 ```bash
 wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash

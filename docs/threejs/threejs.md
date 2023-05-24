@@ -9,7 +9,7 @@ tag:
 isOriginal: true
 timeline: true
 date: 2023-05-23
-article: false
+article: true
 ---
 
 `three.js`学习笔记。
@@ -216,6 +216,6 @@ scene对象属性：
 - overrideMaterial
 
 scene对象方法：
-- add()：添加物体
-- remove()：移除物体
-- getObjectByName()：使用`name`属性获取物体
+- add()：向 scene 中添加对象
+- remove()：移除 scene 中的对象
+- getObjectByName()：通过`name`属性获取 scene 中对象
