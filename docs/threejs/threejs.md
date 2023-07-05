@@ -9,7 +9,7 @@ tag:
 isOriginal: true
 timeline: true
 date: 2023-05-23
-article: true
+article: false
 ---
 
 `three.js`学习笔记。
