@@ -1,0 +1,1 @@
+import{_ as r}from"./plugin-vue_export-helper-c27b6911.js";import{o as c,c as o,b as e,d as t}from"./app-b15e6a73.js";const s={},n=e("p",null,[t("cpu"),e("br"),t(" 主板"),e("br"),t(" 内存"),e("br"),t(" 电源"),e("br"),t(" 机箱"),e("br"),t(" pcie扩展卡")],-1),_=[n];function a(l,d){return c(),o("div",null,_)}const m=r(s,[["render",a],["__file","nas.html.vue"]]);export{m as default};
