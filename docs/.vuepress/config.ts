@@ -1,4 +1,4 @@
-import { defineUserConfig } from 'vuepress';
+import { defineUserConfig } from '@vuepress/cli';
 import theme from './theme';
 import { searchProPlugin } from 'vuepress-plugin-search-pro';
 
