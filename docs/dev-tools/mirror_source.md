@@ -63,16 +63,12 @@ registry=https://registry.npmmirror.com/
 
 设置`Node.js`镜像地址：
 ```bash
-pnpm config set node-mirror:release https://npmmirror.com/mirrors/node/
-pnpm config set node-mirror:rc https://npmmirror.com/mirrors/node-rc/
-pnpm config set node-mirror:nightly https://npmmirror.com/mirrors/node-nightly/
+pnpm config set node-mirror:release https://mirrors.aliyun.com/nodejs-release/
 ```
 
 或者编辑`.npmrc`,添加如下:
 ```bash
-node-mirror:release=https://npmmirror.com/mirrors/node/
-node-mirror:rc=https://npmmirror.com/mirrors/node-rc/
-node-mirror:nightly=https://npmmirror.com/mirrors/node-nightly/
+node-mirror:release=https://mirrors.aliyun.com/nodejs-release/
 ```
 
 
