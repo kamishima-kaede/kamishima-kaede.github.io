@@ -1,6 +1,5 @@
-import { defineUserConfig } from '@vuepress/cli';
+import { defineUserConfig } from 'vuepress';
 import theme from './theme';
-import { searchProPlugin } from 'vuepress-plugin-search-pro';
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -12,11 +11,5 @@ export default defineUserConfig({
   // open: true,
   dest: 'dist',
   head: [['meta', { name: 'keywords', content: 'JavaScript,HTML,CSS' }]], // head 额外的需要被注入到当前页面的 HTML<head> 中的标签
-  theme,
-  plugins: [
-    searchProPlugin({
-      // 索引全部内容
-      indexContent: true
-    })
-  ]
+  theme
 });

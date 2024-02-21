@@ -75,6 +75,15 @@ acme.sh --install-cert -d example.com \
 ```
 其他方式[参考文档](https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E#3-copy%E5%AE%89%E8%A3%85-%E8%AF%81%E4%B9%A6)
 
+如果报错需要安装`ecc`证书，用如下命令：
+
+```bash
+acme.sh --install-cert --ecc -d example.com \
+--key-file       /path/to/keyfile/in/nginx/key.pem  \
+--fullchain-file /path/to/fullchain/nginx/cert.pem \
+--reloadcmd     "service nginx force-reload"
+```
+
 ## 自动更新证书
 
 `acme.sh`安装的时候会自动添加定时任务,确保你的机器上`crontab`正确安装,可以通过`crontab  -l`命令参看定时任务

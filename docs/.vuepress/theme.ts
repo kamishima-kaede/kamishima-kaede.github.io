@@ -88,7 +88,7 @@ export default hopeTheme({
 
     mdEnhance: {
       gfm: true,
-      container: true,
+      hint: true,
       checkLinks: { status: 'dev' },
       vPre: true,
       tabs: true,
@@ -130,8 +130,7 @@ export default hopeTheme({
       demo: true,
       playground: {
         presets: ['ts', 'vue']
-      },
-      presentation: ['highlight', 'math', 'search', 'notes', 'zoom']
+      }
     },
 
     pwa: {
