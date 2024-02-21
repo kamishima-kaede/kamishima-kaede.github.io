@@ -50,10 +50,17 @@ iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```bash
 pnpm config set registry https://registry.npmmirror.com/
 ```
+
+设置`Node.js`镜像地址：
+```bash
+pnpm config set node-mirror:release https://mirrors.aliyun.com/nodejs-release/
+```
+
 如果设置报错,原因一般是没有安装`npm`,可以手动创建`.npmrc`文件,然后添加:  
 
 ```bash
 registry=https://registry.npmmirror.com/
+node-mirror:release=https://mirrors.aliyun.com/nodejs-release/
 ```
 
 `.npmrc`文件所在位置如下,根据具体情况在所在位置创建:
@@ -61,46 +68,36 @@ registry=https://registry.npmmirror.com/
 - 用户配置文件：`~/.npmrc`
 - 项目配置文件：`$项目根目录/.npmrc`
 
-设置`Node.js`镜像地址：
-```bash
-pnpm config set node-mirror:release https://mirrors.aliyun.com/nodejs-release/
-```
 
-或者编辑`.npmrc`,添加如下:
+然后就可以使用`pnpm env`命令来管理`Node.js`版本。
 ```bash
-node-mirror:release=https://mirrors.aliyun.com/nodejs-release/
-```
-
-
-然后就可以使用`pnpm env`命令来安装`Node.js`了。
-```bash
+# 安装
 # 安装 LTS 版本的 Node.js
 pnpm env use --global lts
 pnpm env use --global argon
-
 # 安装 v16 的Node.js
 pnpm env use --global 16
-
 # 安装 Node.js 的预发行版本
 pnpm env use --global nightly
 pnpm env use --global rc
 pnpm env use --global 16.0.0-rc.0
 pnpm env use --global rc/14
-
 # 安装最新版本的 Node.js
 pnpm env use --global latest
+# 安装指定版本的 Node.js 而不激活为当前版本
+pnpm env add --global lts 18 20.0.1
 
+# 查看
 # 查看本地Node.js列表
 pnpm env list
-
 # 查看远程可用Node.js列表
 pnpm env list --remote
-
 # 查看远程可用指定Node.js版本
 pnpm env list --remote 16
 
+# 移除
 # 移除指定版本的 Node.js
-pnpm env remove --global 14.0.0
+pnpm env remove --global 14.0.0 16.2.3
 ```
 
 
