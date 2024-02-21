@@ -87,6 +87,7 @@ export default hopeTheme({
     },
 
     mdEnhance: {
+      revealJs: true,
       gfm: true,
       hint: true,
       checkLinks: { status: 'dev' },
