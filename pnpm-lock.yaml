@@ -35,7 +35,7 @@ devDependencies:
     specifier: 10.8.0
     version: 10.8.0
   reveal.js:
-    specifier: ^5.0.4
+    specifier: 5.0.4
     version: 5.0.4
   vuepress:
     specifier: 2.0.0-rc.8
