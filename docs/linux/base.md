@@ -1,3 +1,7 @@
+---
+article: false
+---
+
 相容分时系统 Compatible Time-Sharing System, CTSS
 
 1973 Unix C语言编写 诞生
