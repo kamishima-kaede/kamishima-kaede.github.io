@@ -22,6 +22,6 @@
     "vuepress-theme-hope": "2.0.0-rc.25"
   },
   "dependencies": {
-    "vue": "^3.4.19"
+    "vue": "^3.4.24"
   }
 }
