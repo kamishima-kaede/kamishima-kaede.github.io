@@ -32,8 +32,8 @@ devDependencies:
     specifier: 0.16.9
     version: 0.16.9
   mermaid:
-    specifier: 10.8.0
-    version: 10.8.0
+    specifier: 10.9.1
+    version: 10.9.1
   reveal.js:
     specifier: 5.0.4
     version: 5.0.4
@@ -42,7 +42,7 @@ devDependencies:
     version: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.19)
   vuepress-theme-hope:
     specifier: 2.0.0-rc.25
-    version: 2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-pwa@2.0.0-rc.16)(@waline/client@3.1.2)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
+    version: 2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-pwa@2.0.0-rc.16)(@waline/client@3.1.2)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.9.1)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
 
 packages:
 
@@ -4443,8 +4443,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /mermaid@10.8.0:
-    resolution: {integrity: sha512-9CzfSreRjdDJxX796+jW4zjEq0DVw5xVF0nWsqff8OTbrt+ml0TZ5PyYUjjUZJa2NYxYJZZXewEquxGiM8qZEA==}
+  /mermaid@10.9.1:
+    resolution: {integrity: sha512-Mx45Obds5W1UkW1nv/7dHRsbfMM1aOKA2+Pxs/IGHNonygDHwmng8xTHyS9z4KWVi0rbko8gjiBmuwwXQ7tiNA==}
     dependencies:
       '@braintree/sanitize-url': 6.0.4
       '@types/d3-scale': 4.0.8
@@ -4457,6 +4457,7 @@ packages:
       dayjs: 1.11.10
       dompurify: 3.0.9
       elkjs: 0.9.1
+      katex: 0.16.9
       khroma: 2.1.0
       lodash-es: 4.17.21
       mdast-util-from-markdown: 1.3.1
@@ -5763,7 +5764,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-md-enhance@2.0.0-rc.25(@vue/repl@4.1.1)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
+  /vuepress-plugin-md-enhance@2.0.0-rc.25(@vue/repl@4.1.1)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.9.1)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
     resolution: {integrity: sha512-zmwWCk92S0yQL/uCF6l5YV1Zm2lsGjL9XJZVHEOVY1guXNfnvc92O0gf1dN9E4v+8henIFag5fluMrsfrUP8UQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -5845,7 +5846,7 @@ packages:
       flowchart.ts: 3.0.0
       js-yaml: 4.1.0
       katex: 0.16.9
-      mermaid: 10.8.0
+      mermaid: 10.9.1
       reveal.js: 5.0.4
       vue: 3.4.19
       vuepress: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.19)
@@ -5898,7 +5899,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-pwa@2.0.0-rc.16)(@waline/client@3.1.2)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
+  /vuepress-theme-hope@2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-pwa@2.0.0-rc.16)(@waline/client@3.1.2)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.9.1)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
     resolution: {integrity: sha512-Mf9YzRRYHEtRy8Mni/nrsEfeKL45wv9700eglZ4rP/RBVJ6kjk/sRr7yohPiDfTRz/RRoWofEYVGTGSTgDDz4w==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -5957,7 +5958,7 @@ packages:
       vuepress: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.19)
       vuepress-plugin-comment2: 2.0.0-rc.25(@waline/client@3.1.2)(vuepress@2.0.0-rc.8)
       vuepress-plugin-components: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
-      vuepress-plugin-md-enhance: 2.0.0-rc.25(@vue/repl@4.1.1)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
+      vuepress-plugin-md-enhance: 2.0.0-rc.25(@vue/repl@4.1.1)(echarts@5.5.0)(flowchart.ts@3.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.9.1)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
       vuepress-plugin-sass-palette: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
       vuepress-shared: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
     transitivePeerDependencies:
