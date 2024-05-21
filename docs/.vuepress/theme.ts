@@ -17,7 +17,7 @@ export default hopeTheme({
 
   // 主题布局选项
   navbar: navbar,
-  navbarIcon: true,
+  // navbarIcon: true,
   navbarLayout: { start: ['Brand'], center: ['Links'], end: ['Language', 'Repo', 'Outlook', 'Search'] },
   navbarAutoHide: 'mobile',
   logo: '/assets/svg/logo.svg',
@@ -28,7 +28,7 @@ export default hopeTheme({
   hideSiteNameOnMobile: true, // 是否在移动视图下隐藏站点名称
 
   sidebar: sidebar,
-  sidebarIcon: true,
+  // sidebarIcon: true,
   headerDepth: 3,
 
   breadcrumb: true, // 路径导航
