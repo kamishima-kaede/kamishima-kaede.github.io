@@ -59,7 +59,7 @@ export default hopeTheme({
   toc: true,
 
   // 主题外观选项
-  iconAssets: 'iconfont',
+  // iconAssets: 'iconfont',
   darkmode: 'switch',
 
   blog: {
@@ -90,7 +90,6 @@ export default hopeTheme({
       revealJs: true,
       gfm: true,
       hint: true,
-      checkLinks: { status: 'dev' },
       vPre: true,
       tabs: true,
       codetabs: true,

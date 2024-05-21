@@ -13,4 +13,4 @@ date: 2023-03-12
 
 <!-- more -->
 
-- [常用命令整理](commonCmd)
+- [常用命令整理](./commonCmd.html)
