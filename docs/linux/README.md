@@ -13,7 +13,4 @@ date: 2023-03-12
 
 <!-- more -->
 
-- [常用命令整理]（commoncmd.md）
-- [一些概念](linuxConcept.md)
-- [文件相关操作](fileCcommand.md)
-- [应用和包管理](package.md)
+- [常用命令整理](commonCmd)
