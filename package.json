@@ -11,7 +11,7 @@
   "devDependencies": {
     "@vue/repl": "4.1.2",
     "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-pwa": "2.0.0-rc.16",
+    "@vuepress/plugin-pwa": "2.0.0-rc.20",
     "@waline/client": "3.2.0",
     "echarts": "5.5.0",
     "flowchart.ts": "3.0.0",
