@@ -103,7 +103,7 @@ cd /etc/nginx/conf.d
 
 配置参考,根据自身实际情况修改
 
-```text
+```tex
 server {
     listen       80;
     # 域名，多个以空格分开
@@ -158,7 +158,7 @@ sudo vi /etc/nginx/conf.d/fuckqq-5000.conf
 
 因为将来可能会有多个项目对应服务器后端的多个服务，所以要考虑这种负载均衡的这种场景。这时候通过以下配置来实现：
 
-```text
+```tex
 # 通过 upstream 我们可以设定一个简单的负载均衡策略，以应对将来可能的升级
 # 首先定义一个 server 集群 gougou，里面可以加多个 server，每个 server 对应的值可以用域名，也可以直接用 IP，# 但我们通常不会用 IP 来访问，而是通过域名:
 upstream nodeStatic {

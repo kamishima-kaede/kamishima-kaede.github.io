@@ -84,7 +84,7 @@ Promise.race(): (promises) => {}
 
 2.1如何改变promise的状态?
 
-```text
+```tex
 (1)resolve(value): 如果当前是pendding就会变为resolved
 (2)reject(reason): 如果当前是pendding就会变为rejected
 (3)抛出异常: 如果当前是pendding就会变为rejected

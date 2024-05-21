@@ -1,6 +1,6 @@
 # CSS预编译语言
 
-```text
+```tex
 1.变量  @name
 2.嵌套
 3.混合(mixin)   .name(){}
@@ -28,7 +28,7 @@
 
 方式二:(node)
 
-```text
+```tex
 node    //进入node
 
 //全局状态下安装

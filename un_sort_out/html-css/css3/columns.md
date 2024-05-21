@@ -8,7 +8,7 @@
 
 ​分栏布局IE10+都可以使用，API稳定，移动端兼容性比flex布局要好，虽然设计初衷不一样，但很多布局都可以实现。甚至某些场景下，只能使用分栏布局才能实现。很有学习的必要。
 
-```text
+```tex
 直接相关属性
     column-width    每一栏/列的最佳宽度
     column-count    理想的分栏数目
@@ -123,7 +123,7 @@ column-span: all;/*表示横跨所有垂直列。*/
 
 语法:
 
-```text
+```tex
 column-fill: auto;
 column-fill: balance;
 column-fill: balance-all;(可忽略)
@@ -269,7 +269,7 @@ break-inside: avoid;
 
 - column布局高度也是重要限制
 
-  - ```text
+  - ```tex
     上面几个column-count示意都是定了个宽度600px，高度是默认的auto，因此，分栏的表现都很乖巧，反正高度是无限的，无论你设置多少栏，我都可以通过调整高度来实现。
 
     但是，如果我们高度也设定了固定的值，例如高度60px，则此时很多有意思的事情就会发生了。
@@ -279,7 +279,7 @@ break-inside: avoid;
 
 - column-width会让column-count打酱油
 
-  - ```text
+  - ```tex
     .col4 {
         width: 600px;
         column-count: 4;
@@ -302,6 +302,6 @@ break-inside: avoid;
     }
     ```
 
-  - ```text
+  - ```tex
     此时就形成了一个永远只会显示一页宽度的视窗，然后下面的事情就简单了，我们通过JS一些一些touch相关的事件，控制我们的.example元素translateX位移，就可以实现一开始展示的水平滑屏浏览小说内容的效果了。
     ```

@@ -1,6 +1,6 @@
 # 常用指令
 
-```text
+```tex
 ls              显示文件或目录
     -l          列出文件详细信息l(list)
     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)
@@ -29,7 +29,7 @@ ctrl+alt+F1     命令行全屏模式
 ```
 ## `ubuntu`常用命令
 
-```text
+```tex
 uname -a              查看到Linux内核版本
 apt-get update        升级安装包相关的命令,刷新可安装的软件列表(但是不做任何实际的安装动作)
 apt-get upgrade       进行安装包的更新(软件版本的升级)
