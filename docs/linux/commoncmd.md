@@ -1,13 +1,14 @@
 ---
 article: false
 ---
+# 常用命令整理
+
 
 ## Unix 哲学
 
 ```tex
 一个工具只做一件事
 ```
-
 
 
 ## Linux原则
@@ -86,13 +87,17 @@ touch a.txt # 创建新文件，也可以用来更新新文件时间戳
 ```
 
 
-
 ## 应用和包管理
 
 ```bash
 apt list --installed
 apt list --installed | less -N
 # 输入 /apt 并按回车键，然后按 n 键，就会将每一个匹配到的 apt 字符串放到分页器第一行
+# 们按 g 键回到列表头
+
+# 过滤 grep
+apt list --installed | grep '^apt' > apt_related_pkgs
+
 
 ```
 
