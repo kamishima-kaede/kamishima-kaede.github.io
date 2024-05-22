@@ -5,6 +5,10 @@ date: 2024-05-21
 
 # 应用和包管理
 
+
+
+## 使用`apt`管理应用
+
 ```bash
 # 列出系统已安装应用
 apt list --installed
@@ -44,6 +48,8 @@ sudo apt autoremove
 # 卸载应用
 sudo apt remove git
 ```
+
+
 
 ### 使用`dpkg`管理应用
 
@@ -107,12 +113,20 @@ dpkg -l googler
 
 关于`dpkg`工具的最后一个话题与它的安全性有关。前面说过在安装之前可以通过`-I`、`-c`等参数检查包的元数据和内容，但这些方法不能发现可执行文件内部隐藏的恶意代码。所以为了保证系统安全，要养成只在官网下载`deb`包的习惯。对于从第三方得到的包，除非来源完全可靠，否则尽量不要安装。
 
+
+
 ## 跨平台包管理器
 
+### `Homebrew`
 
+跨平台原理: 采用二进制—源码双重安装策略。
 
+apt、yum 这些工具只要将应用及其依赖从软件源将二进制包下载下来，然后放到正确的位置就完成了安装过程。
 
-
+```bash
+# 安装
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
 
 
