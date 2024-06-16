@@ -3,7 +3,7 @@ import theme from './theme';
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'Kamishima-kaede',
+  title: 'hanekawa-shiki',
   description: '前端博客',
   base: '/',
   shouldPrefetch: false,

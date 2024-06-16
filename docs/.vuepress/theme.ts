@@ -6,7 +6,7 @@ export default hopeTheme({
   // 基本配置
   hostname: 'https://hanekawa.top',
   author: {
-    name: 'kamishima-kaede',
+    name: 'hanekawa-shiki',
     url: 'https://hanekawa.top'
   },
   locales: {},
@@ -22,7 +22,7 @@ export default hopeTheme({
   navbarAutoHide: 'mobile',
   logo: '/assets/svg/logo.svg',
   logoDark: '/assets/svg/logo.svg',
-  repo: 'kamishima-kaede/kamishima-kaede.github.io', // 默认为 GitHub. 同时也可以是一个完整的 URL
+  repo: 'hanekawa-shiki/hanekawa-shiki.github.io', // 默认为 GitHub. 同时也可以是一个完整的 URL
   repoLabel: 'GitHub', // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
   repoDisplay: true, // 是否在导航栏内显示仓库链接，默认为 `true`
   hideSiteNameOnMobile: true, // 是否在移动视图下隐藏站点名称
@@ -55,7 +55,7 @@ export default hopeTheme({
 
   footer: '',
   displayFooter: true,
-  copyright: 'Copyright © 2018-present kamishima-kaede',
+  copyright: 'Copyright © 2018-present hanekawa-shiki',
   toc: true,
 
   // 主题外观选项
@@ -67,7 +67,7 @@ export default hopeTheme({
     articlePerPage: 10,
     avatar: '/assets/svg/logo.svg',
     // roundAvatar: true,
-    name: 'Kamishima-kaede',
+    name: 'hanekawa-shiki',
     description: 'Nothing is easier than being busy, nothing more difficult than being effective.',
     intro: '/about/aboutme.html'
     // timeline: '发布于'
@@ -148,9 +148,9 @@ export default hopeTheme({
         color: '#ffffff'
       },
       manifest: {
-        name: 'Kamishima-kaede 的个人博客',
-        short_name: 'Kamishima-kaede Blog',
-        description: 'Kamishima-kaede 的个人博客',
+        name: 'hanekawa-shiki 的个人博客',
+        short_name: 'hanekawa-shiki Blog',
+        description: 'hanekawa-shiki 的个人博客',
         theme_color: '#5c92d1',
         icons: [
           {
