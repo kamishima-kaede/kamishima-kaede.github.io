@@ -7,6 +7,7 @@ tag:
   - shell
 isOriginal: true
 date: 2024-04-04
+article: false
 ---
 
 `linux`学习笔记
