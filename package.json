@@ -4,7 +4,7 @@
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress-webpack dev docs",
+    "dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' vuepress-webpack dev docs",
     "clean-dev": "vuepress-webpack dev docs --clean-cache",
     "build": "vuepress-webpack build docs"
   },
@@ -13,6 +13,7 @@
     "@vuepress/bundler-webpack": "2.0.0-rc.14",
     "@vuepress/plugin-pwa": "2.0.0-rc.36",
     "@waline/client": "3.2.2",
+    "cross-env": "7.0.3",
     "echarts": "5.5.0",
     "flowchart.ts": "3.0.0",
     "katex": "0.16.10",
