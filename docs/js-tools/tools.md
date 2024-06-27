@@ -3,7 +3,7 @@ title: 日常js积累
 icon: javascript
 category: 前端
 tag:
-  - node
+  - javascript
 isOriginal: true
 article: true
 date: 2024-06-27
@@ -14,6 +14,14 @@ date: 2024-06-27
 <!-- more -->
 
 ## 工具函数
+
+### 获取对象类型
+
+```js
+function classof(o) {
+  return Object.prototype.toString.call(o).slice(8, -1)
+}
+```
 
 ### 质数
 
