@@ -74,7 +74,10 @@ export default hopeTheme({
 
   plugins: {
     shiki: {
-      theme: "nord",
+      themes: {
+        light: "github-light",
+        dark: "one-dark-pro"
+      },
       langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'shell', 'text'],
     },
     blog: {
