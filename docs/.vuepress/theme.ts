@@ -48,13 +48,13 @@ export default hopeTheme({
   */
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime', 'Word', 'PageView'],
   lastUpdated: true,
-  contributors: true,
+  contributors: false,
   editLink: false,
   docsDir: 'docs',
 
   footer: '',
   displayFooter: true,
-  copyright: 'Copyright © 2018-present hanekawa-shiki',
+  copyright: 'Copyright © 2022-present hanekawa-shiki',
   toc: true,
 
   // 主题外观选项
