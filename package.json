@@ -16,7 +16,7 @@
     "cross-env": "7.0.3",
     "echarts": "5.5.1",
     "flowchart.ts": "3.0.0",
-    "katex": "0.16.10",
+    "katex": "0.16.11",
     "mermaid": "10.9.1",
     "reveal.js": "5.1.0",
     "sass-loader": "14.2.1",
