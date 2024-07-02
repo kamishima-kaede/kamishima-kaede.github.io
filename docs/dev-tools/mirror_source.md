@@ -100,6 +100,20 @@ pnpm env list --remote 16
 pnpm env remove --global 14.0.0 16.2.3
 ```
 
+## 发布`npm`包流程
+
+```bash
+# 切回官方源
+npm config set registry https://registry.npmjs.org/
+# 确认已切回
+npm config get registry # https://registry.npmjs.org/
+# 登陆npm
+npm login
+# 上传包
+npm publish
+# 完成后可以通过查看包版本确定是否完成上传
+npm view packageName versions
+```
 
 ## `nvm`(不推荐)
 

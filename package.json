@@ -14,7 +14,7 @@
     "@vuepress/plugin-pwa": "2.0.0-rc.37",
     "@waline/client": "3.2.6",
     "cross-env": "7.0.3",
-    "echarts": "5.5.0",
+    "echarts": "5.5.1",
     "flowchart.ts": "3.0.0",
     "katex": "0.16.10",
     "mermaid": "10.9.1",
@@ -24,6 +24,6 @@
     "vuepress-theme-hope": "2.0.0-rc.50"
   },
   "dependencies": {
-    "vue": "3.4.30"
+    "vue": "3.4.31"
   }
 }
